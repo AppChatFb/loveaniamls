@@ -47,6 +47,7 @@ class MainActivity : AppCompatActivity() {
         btnAdd.setOnClickListener {
             process.visibility = View.VISIBLE
             Log.d("TAG223", "onCreate: ")
+            Log.d("TAG223", "onCreate: ")
             apiService!!.getData()!!.enqueue(object : Callback<Respone?> {
                 override fun onFailure(call: Call<Respone?>, t: Throwable) {
                     Log.d("TAG112", "onFailure:  ")
